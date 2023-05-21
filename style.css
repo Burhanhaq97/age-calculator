@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  padding: 5rem 8rem;
+  background-color: rgba(77, 77, 180, 0.753);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+
+.heading h1 {
+  font-size: 6rem;
+  text-transform: capitalize;
+}
+
+.age-input {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.age-input-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.age-input-top input {
+  width: 65%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  padding: 2rem;
+}
+
+.age-input-top span {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.error-msg {
+  display: flex;
+  place-self: flex-start;
+  padding-left: 2rem;
+  display: none;
+}
+
+.error-msg h2 {
+  font-size: 3rem;
+  color: #c42e2e;
+}
+
+.age-output {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.age-output ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.age-output ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: white;
+}
+
+.age-output ul li span {
+  width: 20rem;
+  height: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 1200px) {
+  section{
+    width:fit-content;
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .age-input {
+    width: 90%;
+  }
+  .age-output ul {
+    gap: 9rem 5rem;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .heading h1 {
+    font-size: 5rem;
+  }
+  .age-input-top {
+    justify-content: space-around;
+  }
+  .age-input-top input {
+    width: 55%;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .heading h1 {
+    font-size: 4rem;
+  }
+  .age-input-top {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .age-input-top input {
+    width: 90%;
+  }
+  .error-msg {
+    place-self: center;
+    padding: 0;
+  }
+  .error-msg h2 {
+    font-size: 2.5rem;
+  }
+  .age-output ul li span {
+    width: 15rem;
+    height: 10rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .age-input-top input {
+    width: 100%;
+  }
+  .error-msg h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .heading h1 {
+    font-size: 3rem;
+  }
+  .age-input-top span {
+    font-size: 2.5rem;
+  }
+  .error-msg h2 {
+    font-size: 2rem;
+  }
+}
